@@ -18,10 +18,10 @@ type unsignedJWT = {
     }
 }
 
-const registryAddress: string = '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b';
+const registryAddress: string = '0x48a9054a18c82b126Fae729a493757209E9182b8';
 const providerConfig = {
     networks: [
-      { name: "0x5", provider: ethersProvider },
+      { name: "0x377", provider: ethersProvider },
     ],
     registry: registryAddress // optional as ethr-did-resolver sets this up as default
   }

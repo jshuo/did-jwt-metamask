@@ -13,10 +13,10 @@ const ethr_did_1 = require("ethr-did");
 const did_resolver_1 = require("did-resolver");
 const ethr_did_resolver_1 = require("ethr-did-resolver");
 const signer_1 = require("../ethers/signer");
-const registryAddress = '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b';
+const registryAddress = '0x48a9054a18c82b126Fae729a493757209E9182b8';
 const providerConfig = {
     networks: [
-        { name: "0x5", provider: signer_1.provider },
+        { name: "0x377", provider: signer_1.provider },
     ],
     registry: registryAddress // optional as ethr-did-resolver sets this up as default
 };

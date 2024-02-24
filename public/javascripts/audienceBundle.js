@@ -99,13 +99,13 @@ const audienceAddressSpan = document.querySelector('#audienceAddress');
 const validateJWTButton = document.querySelector('#validateJWT');
 const privateClaimSpan = document.querySelector('#privateClaim');
 const verifiedBoolSpan = document.querySelector('#verifiedBool');
-const registryAddress = '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b';
+const registryAddress = '0x48a9054a18c82b126Fae729a493757209E9182b8';
 let audienceAddress;
 let signedJWT;
 // getResolver will return an object with a key/value pair of { "ethr": resolver } where resolver is a function used by the generic did resolver.
 const providerConfig = {
     networks: [
-        { name: "0x5", provider: signer_1.provider },
+        { name: "0x377", provider: signer_1.provider },
     ],
     registry: registryAddress // optional as ethr-did-resolver sets this up as default
 };
@@ -38065,7 +38065,7 @@ require('@ethersproject/signing-key');
 
 const identifierMatcher = /^(.*)?(0x[0-9a-fA-F]{40}|0x[0-9a-fA-F]{66})$/;
 const nullAddress = '0x0000000000000000000000000000000000000000';
-const DEFAULT_REGISTRY_ADDRESS = '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b';
+const DEFAULT_REGISTRY_ADDRESS = '0x48a9054a18c82b126Fae729a493757209E9182b8';
 const MESSAGE_PREFIX = '0x1900';
 exports.verificationMethodTypes = void 0;
 
@@ -38168,37 +38168,37 @@ exports.Errors = void 0;
  */
 const deployments = [{
   chainId: 1,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'mainnet',
   legacyNonce: true
 }, {
   chainId: 3,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'ropsten',
   legacyNonce: true
 }, {
   chainId: 4,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'rinkeby',
   legacyNonce: true
 }, {
   chainId: 5,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'goerli',
   legacyNonce: true
 }, {
   chainId: 42,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'kovan',
   legacyNonce: true
 }, {
   chainId: 30,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'rsk',
   legacyNonce: true
 }, {
   chainId: 31,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'rsk:testnet',
   legacyNonce: true
 }, {
@@ -38225,12 +38225,12 @@ const deployments = [{
   legacyNonce: true
 }, {
   chainId: 137,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'polygon',
   legacyNonce: true
 }, {
-  chainId: 80001,
-  registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b',
+  chainId: 887,
+  registry: '0x48a9054a18c82b126Fae729a493757209E9182b8',
   name: 'polygon:test',
   legacyNonce: true
 }, {
@@ -39425,7 +39425,7 @@ class EthrDidController {
    * @param rpcUrl - optional - a JSON-RPC URL that can be used to connect to an ethereum network. At least one of
    *   `contract`, `provider`, or `rpcUrl` is required
    * @param registry - optional - The ERC1056 registry address. Defaults to
-   *   '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b'. Only used with 'provider' or 'rpcUrl'
+   *   '0x48a9054a18c82b126Fae729a493757209E9182b8'. Only used with 'provider' or 'rpcUrl'
    * @param legacyNonce - optional - If the legacy nonce tracking method should be accounted for. If lesser version of
    *   did-ethr-registry contract v1.0.0 is used then this should be true.
    */
@@ -41581,13 +41581,13 @@ exports.deployments = void 0;
  * Represents the known deployments of the ERC1056 registry contract.
  */
 exports.deployments = [
-    { chainId: 1, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'mainnet', legacyNonce: true },
-    { chainId: 3, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'ropsten', legacyNonce: true },
-    { chainId: 4, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'rinkeby', legacyNonce: true },
-    { chainId: 5, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'goerli', legacyNonce: true },
-    { chainId: 42, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'kovan', legacyNonce: true },
-    { chainId: 30, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'rsk', legacyNonce: true },
-    { chainId: 31, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'rsk:testnet', legacyNonce: true },
+    { chainId: 1, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'mainnet', legacyNonce: true },
+    { chainId: 3, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'ropsten', legacyNonce: true },
+    { chainId: 4, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'rinkeby', legacyNonce: true },
+    { chainId: 5, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'goerli', legacyNonce: true },
+    { chainId: 42, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'kovan', legacyNonce: true },
+    { chainId: 30, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'rsk', legacyNonce: true },
+    { chainId: 31, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'rsk:testnet', legacyNonce: true },
     {
         chainId: 246,
         registry: '0xE29672f34e92b56C9169f9D485fFc8b9A136BCE4',
@@ -41604,8 +41604,8 @@ exports.deployments = [
     },
     { chainId: 246785, registry: '0xdCa7EF03e98e0DC2B855bE647C39ABe984fcF21B', name: 'artis:tau1', legacyNonce: true },
     { chainId: 246529, registry: '0xdCa7EF03e98e0DC2B855bE647C39ABe984fcF21B', name: 'artis:sigma1', legacyNonce: true },
-    { chainId: 137, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'polygon', legacyNonce: true },
-    { chainId: 80001, registry: '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b', name: 'polygon:test', legacyNonce: true },
+    { chainId: 137, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'polygon', legacyNonce: true },
+    { chainId: 887, registry: '0x48a9054a18c82b126Fae729a493757209E9182b8', name: 'polygon:test', legacyNonce: true },
     { chainId: 1313161554, registry: '0x63eD58B671EeD12Bc1652845ba5b2CDfBff198e0', name: 'aurora', legacyNonce: true },
 ];
 
@@ -41744,7 +41744,7 @@ class EthrDidController {
      * @param rpcUrl - optional - a JSON-RPC URL that can be used to connect to an ethereum network. At least one of
      *   `contract`, `provider`, or `rpcUrl` is required
      * @param registry - optional - The ERC1056 registry address. Defaults to
-     *   '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b'. Only used with 'provider' or 'rpcUrl'
+     *   '0x48a9054a18c82b126Fae729a493757209E9182b8'. Only used with 'provider' or 'rpcUrl'
      * @param legacyNonce - optional - If the legacy nonce tracking method should be accounted for. If lesser version of
      *   did-ethr-registry contract v1.0.0 is used then this should be true.
      */
@@ -42005,7 +42005,7 @@ const bytes_1 = require("@ethersproject/bytes");
 const signing_key_1 = require("@ethersproject/signing-key");
 exports.identifierMatcher = /^(.*)?(0x[0-9a-fA-F]{40}|0x[0-9a-fA-F]{66})$/;
 exports.nullAddress = '0x0000000000000000000000000000000000000000';
-exports.DEFAULT_REGISTRY_ADDRESS = '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b';
+exports.DEFAULT_REGISTRY_ADDRESS = '0x48a9054a18c82b126Fae729a493757209E9182b8';
 exports.DEFAULT_JSON_RPC = 'http://127.0.0.1:8545/';
 exports.MESSAGE_PREFIX = '0x1900';
 var verificationMethodTypes;

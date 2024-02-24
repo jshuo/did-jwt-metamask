@@ -25,13 +25,13 @@ const audienceAddressSpan = document.querySelector('#audienceAddress');
 const validateJWTButton = document.querySelector('#validateJWT');
 const privateClaimSpan = document.querySelector('#privateClaim');
 const verifiedBoolSpan = document.querySelector('#verifiedBool');
-const registryAddress = '0xdca7ef03e98e0dc2b855be647c39abe984fcf21b';
+const registryAddress = '0x48a9054a18c82b126Fae729a493757209E9182b8';
 let audienceAddress;
 let signedJWT;
 // getResolver will return an object with a key/value pair of { "ethr": resolver } where resolver is a function used by the generic did resolver.
 const providerConfig = {
     networks: [
-        { name: "0x5", provider: signer_1.provider },
+        { name: "0x377", provider: signer_1.provider },
     ],
     registry: registryAddress // optional as ethr-did-resolver sets this up as default
 };
